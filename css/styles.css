@@ -1,8 +1,7 @@
 /*Configuração da fonte*/
 @font-face {
   font-family: 'Roboto';
-  src: url('caminho/para/Roboto-Regular.woff2') format('woff2'),
-    url('caminho/para/Roboto-Regular.woff') format('woff');
+  src: url('roboto-regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
