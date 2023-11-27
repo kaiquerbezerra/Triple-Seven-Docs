@@ -1,0 +1,128 @@
+<!-- contato.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Triple Seven</title>
+    
+    <!-- Adicionando Favicon -->
+    <link rel="icon" href="./logo3.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        main {
+        padding: 20px;
+        text-align: center; /* Centraliza o conteúdo dentro da <main> */
+        }
+
+        h2 {
+            margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+        }  
+        
+        form {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left; /* Alinha o texto à esquerda dentro do formulário */
+  }
+
+        form label {
+          display: block;
+          margin-bottom: 8px;
+          text-align: left; /* Alinha os rótulos à esquerda */
+        }
+
+        form input, form textarea {
+          width: 100%;
+          padding: 8px;
+          margin-bottom: 16px;
+          box-sizing: border-box; /* Garante que o padding não afete a largura total */
+        }
+
+        form button {
+          background-color: #333;
+          color: white;
+          padding: 10px;
+          border: none;
+          cursor: pointer;
+          display: block;
+          margin: 0 auto; /* Centraliza o botão */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Conteúdo da Página Aqui -->
+
+    <header>
+      <h1><a href="index.html"><img class="logo" src="./logo4.png" alt="Logo"></a></h1>
+      <div class="mode-switch" onclick="toggleMode()">🌙</div>
+    </header>
+
+    <nav class="vertical-nav">
+      <a href="https://github.com/kaiquerbezerra/Triple-Seven" target="_blank">Github</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+      <a href="#" id="shareLink">Compartilhe</a>
+      <hr class="nav-divider">
+      <div class="nav-section">
+        <h4>Últimas Atualizações:</h4>
+        <a href="quadro.html" class="nav-link">Rota de Quadros</a>
+        <a href="sprint.html" class="nav-link">Rota de Sprints</a>
+      </div>
+      <hr class="nav-divider">
+      <div class="nav-section">
+        <h4>Mais acessados:</h4>
+        <a href="usuario.html" class="nav-link">Rota de Usuários</a>
+        <a href="quadro.html" class="nav-link">Rota de Quadros</a>
+        <a href="tarefa.html" class="nav-link">Rota de Tarefas</a>
+      </div>
+      <hr class="nav-divider">
+      <div class="dropdown">
+        <a class="dropdown-item-master">Documentação</a>
+        <div class="dropdown-content">
+            <a href="usuario.html" class="dropdown-item">Usuário</a>
+            <a href="tarefa.html" class="dropdown-item">Tarefa</a>
+            <a href="sprint.html" class="dropdown-item">Sprint</a>
+            <a href="quadro.html" class="dropdown-item">Quadro</a>
+        </div>
+    </div>
+
+      <div class="slideshow-container">
+        <img class="fade" src="image1.jpg" style="width:100%">
+        <img class="fade" src="image2.png" style="width:100%">
+        <img class="fade" src="image3.png" style="width:100%">
+      </div>
+    </nav>
+
+    <main>
+        <!-- Seção principal do conteúdo da página -->
+        <h2>Entre em Contato</h2>
+
+        <form action="formReader.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+    </main>
+
+    <footer>
+        <!-- Rodapé da Página -->
+        <div class="social-icons">
+            <!-- Substitua os links fictícios pelos links reais de compartilhamento -->
+            <a href="https://www.facebook.com/sharer.php?u=URL_DA_SUA_PAGINA" target="_blank" title="Compartilhar no Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/intent/tweet?url=URL_DA_SUA_PAGINA&text=Texto_do_tweet" target="_blank" title="Compartilhar no Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" title="Compartilhar no Instagram"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2023 Triple Seven. Todos os direitos reservados.</p>
+    </footer>
+    <script src="../js/app.js"></script>
+</body>
+</html>

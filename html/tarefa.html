@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação - Triple Seven</title>
+    
+    <!-- Adicionando Favicon -->
+    <link rel="icon" href="./logo3.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="center-container">
+        <header>
+            <h1><a href="index.html"><img class="logo" src="./logo4.png" alt="Logo"></a></h1>
+            <div class="mode-switch" onclick="toggleMode()">🌙</div>
+        </header>
+        <nav class="vertical-nav">
+          <a href="https://github.com/kaiquerbezerra/Triple-Seven" target="_blank">Github</a>
+          <a href="sobre.html">Sobre</a>
+          <a href="contato.html">Contato</a>
+          <a href="#" id="shareLink">Compartilhe</a>
+          <hr class="nav-divider">
+          <div class="nav-section">
+            <h4>Últimas Atualizações:</h4>
+            <a href="quadro.html" class="nav-link">Rota de Quadros</a>
+            <a href="sprint.html" class="nav-link">Rota de Sprints</a>
+          </div>
+          <hr class="nav-divider">
+          <div class="nav-section">
+            <h4>Mais acessados:</h4>
+            <a href="usuario.html" class="nav-link">Rota de Usuários</a>
+            <a href="quadro.html" class="nav-link">Rota de Quadros</a>
+            <a href="tarefa.html" class="nav-link">Rota de Tarefas</a>
+          </div>
+          <hr class="nav-divider">
+          <div class="dropdown">
+            <a class="dropdown-item-master">Documentação</a>
+            <div class="dropdown-content">
+                <a href="usuario.html" class="dropdown-item">Usuário</a>
+                <a href="tarefa.html" class="dropdown-item">Tarefa</a>
+                <a href="sprint.html" class="dropdown-item">Sprint</a>
+                <a href="quadro.html" class="dropdown-item">Quadro</a>
+            </div>
+        </div>
+    
+          <div class="slideshow-container">
+            <img class="fade" src="image1.jpg" style="width:100%">
+            <img class="fade" src="image2.png" style="width:100%">
+            <img class="fade" src="image3.png" style="width:100%">
+          </div>
+        </nav>
+
+        <main class="container-about">
+          <!-- Seção principal do conteúdo da página -->
+
+          <!-- board de bloco de rota -->
+          <div class="route-block" onclick="showModal('rota1')">
+              <div class="post-method">POST</div>
+              <div class="Autenticação necessária?">Autenticação necessária?: Sim</div>
+              <div>Rota: /task</div>
+          </div>
+
+          <!-- Modal para exibir detalhes da rota -->
+          <div id="rota1" class="modal">
+              <h2>Detalhes da Rota</h2>
+              <p>Método: POST</p>
+              <p>Função: Criar uma task</p>
+              <p>Parâmetros Obrigatórios: Body com o name da task e sprintId*</p>
+              <p>Parâmetros Opcionais: description, color, finished, userId*</p>
+              <p>Condição: Estar logado</p>
+              <p>Autenticação necessária?: Sim</p>
+              <p>Rota: /task</p>
+
+              <button onclick="hideModal('rota1')">Fechar</button>
+          </div>
+
+          <div class="route-block" onclick="showModal('rota2')">
+            <div class="get-method">GET</div>
+            <div class="Autenticação necessária?">Autenticação necessária?: Sim</div>
+            <div>Rota: /task</div>
+          </div>
+
+          <div id="rota2" class="modal">
+            <h2>Detalhes da Rota</h2>
+            <p>Método: GET</p>
+            <p>Função: Receber todas as tasks de que faz parte</p>
+            <p>Parâmetros:</p>
+            <p>Condição: Estar logado</p>
+            <p>Autenticação necessária?: Sim</p>
+            <p>Rota: /task</p>
+            <button onclick="hideModal('rota2')">Fechar</button>
+          </div>
+
+          <div class="route-block" onclick="showModal('rota3')">
+            <div class="get-method">GET</div>
+            <div class="Autenticação necessária?">Autenticação necessária?: Sim</div>
+            <div>Rota: /task/:id</div>
+          </div>
+
+          <div id="rota3" class="modal">
+            <h2>Detalhes da Rota</h2>
+            <p>Método: GET</p>
+            <p>Função: Receber uma task específica</p>
+            <p>Parâmetros: Id da task</p>
+            <p>Condição: Estar logado</p>
+            <p>Autenticação necessária?: Sim</p>
+            <p>Rota: /task/:id</p>
+            <button onclick="hideModal('rota3')">Fechar</button>
+          </div>
+
+          <div class="route-block" onclick="showModal('rota4')">
+            <div class="put-method">PUT</div>
+            <div class="Autenticação necessária?">Autenticação necessária?: Sim</div>
+            <div>Rota: /task/:id</div>
+          </div>
+
+          <div id="rota4" class="modal">
+            <h2>Detalhes da Rota</h2>
+            <p>Método: PUT</p>
+            <p>Função: Atualizar uma task específica</p>
+            <p>Parâmetros: Body deverá conter os campos a serem atualizados</p>
+            <p>Condição: Usuário logado e task deverá ser sua ou ser admin</p>
+            <p>Autenticação necessária?: Sim</p>
+            <p>Rota: /task/:id</p>
+            <button onclick="hideModal('rota4')">Fechar</button>
+          </div>
+
+          <div class="route-block" onclick="showModal('rota5')">
+            <div class="delete-method">DELETE</div>
+            <div class="Autenticação necessária?">Autenticação necessária?: Sim</div>
+            <div>Rota: /task/:id</div>
+          </div>
+
+          <div id="rota5" class="modal">
+            <h2>Detalhes da Rota</h2>
+            <p>Função: Deletar um quadro</p>
+            <p>Parâmetros: Id do quadro em questão</p>
+            <p>Condição: Usuário logado e task deverá ser sua ou ser admin</p>
+            <p>Método: DELETE</p>
+            <p>Autenticação necessária?: Sim</p>
+            <p>Rota: /task/:id</p>
+            <button onclick="hideModal('rota5')">Fechar</button>
+          </div>
+
+          <!-- Fundo do modal -->
+          <div id="modalBackground" class="modal-background" onclick="hideModal('rota1')"></div>
+      </main>
+        <footer>
+            <!-- Rodapé da Página -->
+            <div class="social-icons">
+                <!-- Adicione ícones de redes sociais aqui -->
+            </div>
+            <p>&copy; 2023 Triple Seven. Todos os direitos reservados.</p>
+        </footer>
+    </div>
+
+    <script src="../js/app.js"></script>
+    <script>
+        // Funções para mostrar e ocultar modais
+        function showModal(modalId) {
+            document.getElementById(modalId).style.display = 'block';
+            document.getElementById('modalBackground').style.display = 'block';
+        }
+
+        function hideModal(modalId) {
+            document.getElementById(modalId).style.display = 'none';
+            document.getElementById('modalBackground').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
