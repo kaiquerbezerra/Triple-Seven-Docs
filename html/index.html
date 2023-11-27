@@ -1,153 +1,181 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
+    <!--Formato do encoding de caracteres-->
     <meta charset="UTF-8">
+    <!--Definicoes de funcionamento em aparelhos diversos-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título da página-->
     <title>Triple Seven</title>
 
-    <!-- Adicionando Favicon -->
+    <!--Favicon do site-->
     <link rel="icon" href="./logo3.png" type="image/x-icon">
 
+    <!--Importação dos caracteres-->
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
+  </head>
 
-    <!-- Conteúdo da Página Aqui -->
+  <!--Conteúdo da página-->
+  <body>  
+    <!--Classe pro centro do site-->
+    <div class="center-container">
+      <!--Cabeçalho do centro, mostrando a logo e acrescentando na ponta a transição para modo escuro-->
+      <header>
+        <h1><a href="index.html"><img class="logo" src="./logo4.png" alt="Logo"></a></h1>
+          <div class="mode-switch" onclick="toggleMode()">🌙</div>
+      </header>
 
-  <div class="center-container">
-    <header>
-      <h1><a href="index.html"><img class="logo" src="./logo4.png" alt="Logo"></a></h1>
-        <div class="mode-switch" onclick="toggleMode()">🌙</div>
-    </header>
+      <!--Classe da barra de navegação vertical na lateral esquerda-->
+      <nav class="vertical-nav">
+        <!--Conteúdos acessíveis por clique da barra-->
+        <a href="https://github.com/kaiquerbezerra/Triple-Seven" target="_blank">Github</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="#" id="shareLink">Compartilhe</a>
 
-    <nav class="vertical-nav">
-      <a href="https://github.com/kaiquerbezerra/Triple-Seven" target="_blank">Github</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="contato.html">Contato</a>
-      <a href="#" id="shareLink">Compartilhe</a>
-      <hr class="nav-divider">
-      <div class="nav-section">
-        <h4>Últimas Atualizações:</h4>
-        <a href="quadro.html" class="nav-link">Rota de Quadros</a>
-        <a href="sprint.html" class="nav-link">Rota de Sprints</a>
-      </div>
-      <hr class="nav-divider">
-      <div class="nav-section">
-        <h4>Mais acessados:</h4>
-        <a href="usuario.html" class="nav-link">Rota de Usuários</a>
-        <a href="quadro.html" class="nav-link">Rota de Quadros</a>
-        <a href="tarefa.html" class="nav-link">Rota de Tarefas</a>
-      </div>
-      <hr class="nav-divider">
-      <div class="dropdown">
-        <a class="dropdown-item-master">Documentação</a>
-        <div class="dropdown-content">
+        <!--Divisor para facilitar visualização-->
+        <hr class="nav-divider">
+
+        <!--Nova seção dentro da barra de navegação [Últimas páginas atualizadas do projeto]-->
+        <div class="nav-section">
+          <h4>Últimas Atualizações:</h4>
+          <a href="quadro.html" class="nav-link">Rota de Quadros</a>
+          <a href="sprint.html" class="nav-link">Rota de Sprints</a>
+        </div>
+
+        <!--Outra divisão-->
+        <hr class="nav-divider">
+
+        <!--Nova seção dentro da barra de navegação [Mais acessadas do projeto]-->
+        <div class="nav-section">
+          <h4>Mais acessados:</h4>
+          <a href="usuario.html" class="nav-link">Rota de Usuários</a>
+          <a href="quadro.html" class="nav-link">Rota de Quadros</a>
+          <a href="tarefa.html" class="nav-link">Rota de Tarefas</a>
+        </div>
+
+        <!--Outra divisão-->
+        <hr class="nav-divider">
+
+        <!--Div relacionada a uma seção expansiva com um submenu para as rotas do projeto-->
+        <div class="dropdown">
+          <a class="dropdown-item-master">Documentação</a>
+          <div class="dropdown-content">
+            <!--Rotas capazes de serem alcançadas-->
             <a href="usuario.html" class="dropdown-item">Usuário</a>
             <a href="tarefa.html" class="dropdown-item">Tarefa</a>
             <a href="sprint.html" class="dropdown-item">Sprint</a>
             <a href="quadro.html" class="dropdown-item">Quadro</a>
+          </div>
         </div>
-    </div>
+        
+        <!--Div relacionada ao carrossel de imagens alocado no canto inferior da barra de navegação lateral-->
+        <div class="slideshow-container">
+          <img class="fade" src="image1.jpg" style="width:100%">
+          <img class="fade" src="image2.png" style="width:100%">
+          <img class="fade" src="image3.png" style="width:100%">
+        </div>
+      </nav>
 
-      <div class="slideshow-container">
-        <img class="fade" src="image1.jpg" style="width:100%">
-        <img class="fade" src="image2.png" style="width:100%">
-        <img class="fade" src="image3.png" style="width:100%">
-      </div>
-    </nav>
-
-    
-    <div class="center-lines right"></div>  
-
-    <main class="container">
-        <!-- Seção principal do conteúdo da página -->
+      <main class="container">
+        <!--Classe do conteúdo concentrado da página começando com a div de introdução-->
         <div class="introduction">
           <h2>Triple Seven - O Gerenciador de Projetos</h2>
           <p class="project-description">O Triple Seven é um sistema de gerenciamento de projetos projetado para facilitar a colaboração e o acompanhamento do progresso das tarefas em equipes ágeis. Similar ao Trello ou Jira, o Triple Seven permite que Scrum Masters ou líderes de projetos criem quadros para organizar e documentar as atividades do projeto. Os usuários convidados podem então colaborar, criar tarefas e movê-las entre as sprints do projeto para monitorar o progresso de forma eficiente.</p>
-      </div>
+        </div>
 
-      <hr class="separator">
+        <!--Mais um separador-->
+        <hr class="separator">
 
-      <div class="features">
-        <article>
-          <section>
-          <h3>Funcionalidades</h3>
-            <ul>
-                <li>Quadros de Projeto: Crie quadros para cada projeto, fornecendo uma visão geral do andamento.</li>
-                <li>Convites de Usuários: Convide membros da equipe para participar do projeto, dando-lhes acesso às funcionalidades do sistema.</li>
-                <li>Tasks: Crie, atribua e gerencie tarefas no quadro do projeto.</li>
-                <li>Sprints: Organize as tarefas em sprints para acompanhar o progresso em intervalos definidos.</li>
-            </ul>
-          </section>
-        </article>
-      </div>
+        <!--Div relacionado as tecnologias utilizadas-->
+        <div class="features">
+          <article>
+            <section>
+            <h3>Funcionalidades</h3>
+              <ul>
+                  <li>Quadros de Projeto: Crie quadros para cada projeto, fornecendo uma visão geral do andamento.</li>
+                  <li>Convites de Usuários: Convide membros da equipe para participar do projeto, dando-lhes acesso às funcionalidades do sistema.</li>
+                  <li>Tasks: Crie, atribua e gerencie tarefas no quadro do projeto.</li>
+                  <li>Sprints: Organize as tarefas em sprints para acompanhar o progresso em intervalos definidos.</li>
+              </ul>
+            </section>
+          </article>
+        </div>
 
-      <hr class="separator">
+        <hr class="separator">
 
-
-      <div class="technologies-used">
-        <article>
-          <section>
-            <h3>Tecnologias Utilizadas</h3>
-            <ul>
+        <!--Div relacionado as tecnologias utilizada-->
+        <div class="technologies-used">
+          <!--Articles e sections utilizadas para melhorar a organização-->
+          <article>
+            <section>
+              <!--Header seguido de bullet points-->
+              <h3>Tecnologias Utilizadas</h3>
+              <ul>
                 <li>Docker: Utilizado para a conteinerização, garantindo a consistência e portabilidade do ambiente de desenvolvimento.</li>
                 <li>TypeScript: Linguagem principal para o desenvolvimento do backend, proporcionando tipagem estática e melhorando a manutenibilidade do código.</li>
                 <li>Sequelize: ORM (Object-Relational Mapping) utilizado para interagir com o banco de dados MySQL de maneira eficiente.</li>
                 <li>NodeJS: Plataforma de execução de código JavaScript do lado do servidor para criar uma aplicação web escalável e eficiente.</li>
-            </ul>
-          </section>
-        </article>
-      </div>
-
-      <hr class="separator">
-
-      <div class="future-plans">
-        <article>
-          <section>
-            <h3>Planos Futuros</h3>
-            <ul>
+              </ul>
+            </section>
+          </article>
+        </div>
+        <!--Separadar de conteúdo-->
+        <hr class="separator">
+        <!--Div de planos futuros-->
+        <div class="future-plans">
+          <!--Uso de articles e sections para otimizar a organização-->
+          <article>
+            <section>
+              <!--Header seguido de bullet points-->
+              <h3>Planos Futuros</h3>
+              <ul>
                 <li>Desenvolvimento de uma aplicação front-end para facilitar o uso da API.</li>
                 <li>Expansão das funcionalidades existentes para um gerenciamento mais abrangente de projetos.</li>
                 <li>Criação de integrações com o GitHub para uma colaboração mais eficiente.</li>
                 <li>Implementação de um processo de deploy para tornar o site disponível a todos.</li>
-            </ul>
-          </section>
-        </article>
-    </div>
-    </main>
+              </ul>
+            </section>
+          </article>
+        </div>
+      </main>
 
-    <div id="googleMap"></div>
-
-    <footer>
+      <!-- Div do maps-->
+      <div id="googleMap"></div>
+        <!-- Rodapé da página -->
+      <footer>
+        <!-- Div relacionada aos ícones de redes sociais-->
         <div class="social-icons">
-          <!-- Substitua os links fictícios pelos links reais de compartilhamento -->
+          <!--Funcionamento dos três ícones-->
           <a href="https://www.facebook.com/sharer.php?u=URL_DA_SUA_PAGINA" target="_blank" title="Compartilhar no Facebook"><i class="fab fa-facebook"></i></a>
           <a href="https://twitter.com/intent/tweet?url=URL_DA_SUA_PAGINA&text=Texto_do_tweet" target="_blank" title="Compartilhar no Twitter"><i class="fab fa-twitter"></i></a>
           <a href="https://www.instagram.com/" target="_blank" title="Compartilhar no Instagram"><i class="fab fa-instagram"></i></a>
         </div>
+        <!--Mensagem padrão de direitos do site-->
         <p>&copy; 2023 Triple Seven. Todos os direitos reservados.</p>
-    </footer>
-
+      </footer>
     </div>
 
+    <!-- Div relacionada ao popup da newsletter-->
     <div id="newsletter-popup" class="popup">
+      <!--Div relacionada ao conteúdo do popup-->
       <div class="popup-content">
-        <span class="close" onclick="closePopup()">&times;</span>
+        <span class="close" onclick="closePopup()">&times;</span> <!--Botão de fechar-->
         <h2>Inscreva-se em nossa Newsletter</h2>
         <p>Receba as últimas atualizações diretamente na sua caixa de entrada.</p>
-        <form id="newsletter-form" onsubmit="submitForm(); return false;">
+        <form id="newsletter-form" onsubmit="submitForm(); return false;"> <!--Envio do formulário-->
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required>
-          <button type="submit">Inscrever-se</button>
+          <button type="submit">Inscrever-se</button> <!--Botão de envio-->
         </form>
       </div>
     </div>
 
-
+    <!-- Importação do mapa utilizando a API do Maps-->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap" async defer></script>
 
-    <!-- Adicione links para seus scripts JavaScript aqui, se houver -->
+    <!-- Importação dos Códigos JS-->
     <script src="../js/app.js"></script>
-</body>
+  </body>
 </html>

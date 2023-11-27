@@ -1,76 +1,84 @@
-<!-- sobre.html -->
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre - Triple Seven</title>
-    
-    <!-- Adicionando Favicon -->
-    <link rel="icon" href="./logo3.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Adicione links para seus estilos CSS aqui, se houver -->
-    <!-- <link rel="stylesheet" href="caminho/do/seu/estilo.css"> -->
+
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Sobre - Triple Seven</title>
+      
+      <!-- Adicionando Favicon -->
+      <link rel="icon" href="./logo3.png" type="image/x-icon">
+      <link rel="stylesheet" href="../css/styles.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      
     <style>
-        /* Adicione estilos personalizados aqui */
-        .about-me {
-            margin-top: 20px;
-        }
+      /*Estilos personalizados para este arquivo*/
+      .about-me {
+          margin-top: 20px;
+      }
 
-        .about-me img {
-            max-width: 100%;
-            height: auto;
-        }
+      .about-me img {
+          max-width: 100%;
+          height: auto;
+      }
     </style>
-</head>
-<body> <!-- Adiciona a classe dark-mode ao body por padrão -->
+  </head>
 
-    <!-- Conteúdo da Página Aqui -->
-  <div class="center-container">
-    <header>
-      <h1><a href="index.html"><img class="logo" src="./logo4.png" alt="Logo"></a></h1>
-      <div class="mode-switch" onclick="toggleMode()">🌙</div>
-    </header>
+  <body> 
+      <!-- Conteúdo da página Aqui -->
+    <div class="center-container">
+      <header>
+        <h1><a href="index.html"><img class="logo" src="./logo4.png" alt="Logo"></a></h1>
+        <div class="mode-switch" onclick="toggleMode()">🌙</div>
+      </header>
 
-    <nav class="vertical-nav">
-      <a href="https://github.com/kaiquerbezerra/Triple-Seven" target="_blank">Github</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="contato.html">Contato</a>
-      <a href="#" id="shareLink">Compartilhe</a>
-      <hr class="nav-divider">
-      <div class="nav-section">
-        <h4>Últimas Atualizações:</h4>
-        <a href="quadro.html" class="nav-link">Rota de Quadros</a>
-        <a href="sprint.html" class="nav-link">Rota de Sprints</a>
-      </div>
-      <hr class="nav-divider">
-      <div class="nav-section">
-        <h4>Mais acessados:</h4>
-        <a href="usuario.html" class="nav-link">Rota de Usuários</a>
-        <a href="quadro.html" class="nav-link">Rota de Quadros</a>
-        <a href="tarefa.html" class="nav-link">Rota de Tarefas</a>
-      </div>
-      <hr class="nav-divider">
-      <div class="dropdown">
-        <a class="dropdown-item-master">Documentação</a>
-        <div class="dropdown-content">
-            <a href="usuario.html" class="dropdown-item">Usuário</a>
-            <a href="tarefa.html" class="dropdown-item">Tarefa</a>
-            <a href="sprint.html" class="dropdown-item">Sprint</a>
-            <a href="quadro.html" class="dropdown-item">Quadro</a>
+      <!-- Mesma barra de todos os outros arquivos, index explica detalhadamente -->
+      <nav class="vertical-nav">
+        
+        <a href="https://github.com/kaiquerbezerra/Triple-Seven" target="_blank">Github</a>
+        <a href="sobre.html">Sobre</a>
+        <a href="contato.html">Contato</a>
+        <a href="#" id="shareLink">Compartilhe</a>
+
+        <hr class="nav-divider">
+
+        <div class="nav-section">
+          <h4>Últimas Atualizações:</h4>
+          <a href="quadro.html" class="nav-link">Rota de Quadros</a>
+          <a href="sprint.html" class="nav-link">Rota de Sprints</a>
         </div>
-    </div>
+        <hr class="nav-divider">
 
-      <div class="slideshow-container">
-        <img class="fade" src="image1.jpg" style="width:100%">
-        <img class="fade" src="image2.png" style="width:100%">
-        <img class="fade" src="image3.png" style="width:100%">
-      </div>
-    </nav>
+
+        <div class="nav-section">
+          <h4>Mais acessados:</h4>
+          <a href="usuario.html" class="nav-link">Rota de Usuários</a>
+          <a href="quadro.html" class="nav-link">Rota de Quadros</a>
+          <a href="tarefa.html" class="nav-link">Rota de Tarefas</a>
+        </div>
+
+
+        <hr class="nav-divider">
+
+        <div class="dropdown">
+          <a class="dropdown-item-master">Documentação</a>
+          <div class="dropdown-content">
+              <a href="usuario.html" class="dropdown-item">Usuário</a>
+              <a href="tarefa.html" class="dropdown-item">Tarefa</a>
+              <a href="sprint.html" class="dropdown-item">Sprint</a>
+              <a href="quadro.html" class="dropdown-item">Quadro</a>
+          </div>
+        </div>
+
+        <div class="slideshow-container">
+          <img class="fade" src="image1.jpg" style="width:100%">
+          <img class="fade" src="image2.png" style="width:100%">
+          <img class="fade" src="image3.png" style="width:100%">
+        </div>
+      </nav>
 
     <main class="container-about">
-      <!-- Seção principal do conteúdo da página -->
+      <!-- Seção principal do conteúdo da página desta vez falando sobre mim e portanto sendo simplesmente título e parágrafo-->
       <section class="about-me">
           <h2 style="text-align: center;">Sobre Mim</h2>
           <p>Olá! Meu nome é Kaique Rodrigues, sou estudante de Ciência da Computação no segundo período da Universidade UNIFAVIP. Este projeto foi concebido durante a matéria de Desenvolvimento de Aplicações Web, como parte do meu aprendizado em desenvolvimento.</p>
@@ -79,9 +87,8 @@
     </main>
 
     <footer>
-        <!-- Rodapé da Página -->
+        <!-- Rodapé da página -->
         <div class="social-icons">
-            <!-- Substitua os links fictícios pelos links reais de compartilhamento -->
             <a href="https://www.facebook.com/sharer.php?u=URL_DA_SUA_PAGINA" target="_blank" title="Compartilhar no Facebook"><i class="fab fa-facebook"></i></a>
             <a href="https://twitter.com/intent/tweet?url=URL_DA_SUA_PAGINA&text=Texto_do_tweet" target="_blank" title="Compartilhar no Twitter"><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/" target="_blank" title="Compartilhar no Instagram"><i class="fab fa-instagram"></i></a>
@@ -90,6 +97,7 @@
     </footer>
     </div>
 
+    <!-- Importação dos Códigos JS-->
     <script src="../js/app.js"></script>
-</body>
+  </body>
 </html>

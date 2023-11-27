@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título da página-->
     <title>Contato - Triple Seven</title>
     
     <!-- Adicionando Favicon -->
@@ -11,54 +12,57 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        main {
-        padding: 20px;
-        text-align: center; /* Centraliza o conteúdo dentro da <main> */
-        }
+      /*Estilos personalizados para este arquivo*/
+      main {
+      padding: 20px;
+      text-align: center; /* Centraliza o conteúdo dentro da <main> */
+      }
 
-        h2 {
-            margin-bottom: 20px; /* Adiciona espaço abaixo do título */
-        }  
+      h2 {
+          margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+      }  
         
-        form {
-  max-width: 600px;
-  margin: 0 auto;
-  text-align: left; /* Alinha o texto à esquerda dentro do formulário */
-  }
+      form {
+        max-width: 600px;
+        margin: 0 auto;
+        text-align: left; /* Alinha o texto à esquerda dentro do formulário */
+      }
 
-        form label {
-          display: block;
-          margin-bottom: 8px;
-          text-align: left; /* Alinha os rótulos à esquerda */
-        }
+      form label {
+        display: block;
+        margin-bottom: 8px;
+        text-align: left; /* Alinha os rótulos à esquerda */
+      }
 
-        form input, form textarea {
-          width: 100%;
-          padding: 8px;
-          margin-bottom: 16px;
-          box-sizing: border-box; /* Garante que o padding não afete a largura total */
-        }
+      form input, form textarea {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 16px;
+        box-sizing: border-box; /* Garante que o padding não afete a largura total */
+      }
 
-        form button {
-          background-color: #333;
-          color: white;
-          padding: 10px;
-          border: none;
-          cursor: pointer;
-          display: block;
-          margin: 0 auto; /* Centraliza o botão */
-        }
+      form button {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        display: block;
+        margin: 0 auto; /* Centraliza o botão */
+      }
     </style>
-</head>
-<body>
+  </head>
 
-    <!-- Conteúdo da Página Aqui -->
+  <body>
+
+    <!-- Conteúdo da página Aqui -->
 
     <header>
       <h1><a href="index.html"><img class="logo" src="./logo4.png" alt="Logo"></a></h1>
       <div class="mode-switch" onclick="toggleMode()">🌙</div>
     </header>
 
+    <!-- Mesma barra de todos os outros arquivos, index explica detalhadamente -->
     <nav class="vertical-nav">
       <a href="https://github.com/kaiquerbezerra/Triple-Seven" target="_blank">Github</a>
       <a href="sobre.html">Sobre</a>
@@ -96,7 +100,7 @@
     </nav>
 
     <main>
-        <!-- Seção principal do conteúdo da página -->
+        <!-- Seção principal do conteúdo da página dessa vez com um formulário para envio de informações -->
         <h2>Entre em Contato</h2>
 
         <form action="formReader.php" method="post">
@@ -113,16 +117,17 @@
         </form>
     </main>
 
+    <!-- Rodapé da página -->
     <footer>
-        <!-- Rodapé da Página -->
         <div class="social-icons">
-            <!-- Substitua os links fictícios pelos links reais de compartilhamento -->
+            
             <a href="https://www.facebook.com/sharer.php?u=URL_DA_SUA_PAGINA" target="_blank" title="Compartilhar no Facebook"><i class="fab fa-facebook"></i></a>
             <a href="https://twitter.com/intent/tweet?url=URL_DA_SUA_PAGINA&text=Texto_do_tweet" target="_blank" title="Compartilhar no Twitter"><i class="fab fa-twitter"></i></a>
             <a href="https://www.instagram.com/" target="_blank" title="Compartilhar no Instagram"><i class="fab fa-instagram"></i></a>
         </div>
         <p>&copy; 2023 Triple Seven. Todos os direitos reservados.</p>
     </footer>
+    <!-- Importação dos Códigos JS-->
     <script src="../js/app.js"></script>
-</body>
+  </body>
 </html>

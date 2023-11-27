@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Título da página-->
     <title>Documentação - Triple Seven</title>
-    
     <!-- Adicionando Favicon -->
     <link rel="icon" href="./logo3.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Adicione links para seus estilos CSS aqui, se houver -->
-    <!-- <link rel="stylesheet" href="caminho/do/seu/estilo.css"> -->
-</head>
-<body>
-
-    <!-- Conteúdo da Página Aqui -->
+  </head>
+  <body>
+    <!-- Conteúdo da página Aqui -->
     <div class="center-container">
         <header>
+          <!--Cabeçalho do centro, mostrando a logo e acrescentando na ponta a transição para modo escuro-->
             <h1><a href="index.html"><img class="logo" src="./logo4.png" alt="Logo"></a></h1>
             <div class="mode-switch" onclick="toggleMode()">🌙</div>
         </header>
 
+        <!-- Mesma barra de todos os outros arquivos, para mais detalhes index explica detalhadamente -->
         <nav class="vertical-nav">
           <a href="https://github.com/kaiquerbezerra/Triple-Seven" target="_blank">Github</a>
           <a href="sobre.html">Sobre</a>
@@ -56,14 +55,16 @@
             <img class="fade" src="image3.png" style="width:100%">
           </div>
         </nav>
-
+          <!-- Conteúdo principal da página aqui -->
         <main class="container-about">
-          <div class="route-block" onclick="showModal('rota1')">
+          <!--Bloco da rota, poucas características e apenas algumas estilizações para facilitar visualização-->
+          <div class="route-block" onclick="showModal('rota1')"> <!--Ativação do modal no clique, seguido das características, contendo o método, autenticação e path da rota-->
               <div class="post-method">POST</div>
               <div class="Autenticação necessária?">Autenticação necessária?: Não</div>
               <div>Rota: /user</div>
           </div>
 
+          <!-- Conteúdo total da rota, que aparece quando o modal é aberto através do clique -->
           <div id="rota1" class="modal">
               <h2>Detalhes da Rota</h2>
               <p>Método: POST</p>
@@ -76,12 +77,14 @@
               <button onclick="hideModal('rota1')">Fechar</button>
           </div>
 
-          <div class="route-block" onclick="showModal('rota2')">
+          <!--Bloco da rota, poucas características e apenas algumas estilizações para facilitar visualização-->
+          <div class="route-block" onclick="showModal('rota2')"> <!--Ativação do modal no clique, seguido das características, contendo o método, autenticação e path da rota-->
             <div class="post-method">POST</div>
             <div class="Autenticação necessária?">Autenticação necessária?: Não</div>
             <div>Rota: /user/login</div>
           </div>
 
+          <!-- Conteúdo total da rota, que aparece quando o modal é aberto através do clique -->
           <div id="rota2" class="modal">
             <h2>Detalhes da Rota</h2>
             <p>Método: POST</p>
@@ -93,12 +96,14 @@
             <button onclick="hideModal('rota2')">Fechar</button>
           </div>
 
-          <div class="route-block" onclick="showModal('rota3')">
+          <!--Bloco da rota, poucas características e apenas algumas estilizações para facilitar visualização-->
+          <div class="route-block" onclick="showModal('rota3')"> <!--Ativação do modal no clique, seguido das características, contendo o método, autenticação e path da rota-->
             <div class="put-method">PUT</div>
             <div class="Autenticação necessária?">Autenticação necessária?: Sim</div>
             <div>Rota: /user/:id</div>
           </div>
 
+          <!-- Conteúdo total da rota, que aparece quando o modal é aberto através do clique -->
           <div id="rota3" class="modal">
             <h2>Detalhes da Rota</h2>
             <p>Método: PUT</p>
@@ -110,12 +115,14 @@
             <button onclick="hideModal('rota3')">Fechar</button>
           </div>
 
-          <div class="route-block" onclick="showModal('rota4')">
+          <!--Bloco da rota, poucas características e apenas algumas estilizações para facilitar visualização-->
+          <div class="route-block" onclick="showModal('rota4')"> <!--Ativação do modal no clique, seguido das características, contendo o método, autenticação e path da rota-->
             <div class="delete-method">DELETE</div>
             <div class="Autenticação necessária?">Autenticação necessária?: Sim</div>
             <div>Rota: /user/:id</div>
           </div>
 
+          <!-- Conteúdo total da rota, que aparece quando o modal é aberto através do clique -->
           <div id="rota4" class="modal">
             <h2>Detalhes da Rota</h2>
             <p>Função: Deletar um usuário</p>
@@ -128,26 +135,14 @@
           </div>
 
           <div id="modalBackground" class="modal-background" onclick="hideModal('rota1')"></div>
-      </main>
-        <footer>
-            <div class="social-icons">
-            </div>
-            <p>&copy; 2023 Triple Seven. Todos os direitos reservados.</p>
-        </footer>
+        </main>
+      <footer>
+          <div class="social-icons">
+          </div>
+          <p>&copy; 2023 Triple Seven. Todos os direitos reservados.</p>
+      </footer>
     </div>
-
+    <!-- Importação dos Códigos JS-->
     <script src="../js/app.js"></script>
-    <script>
-        // Funções para mostrar e ocultar modais
-        function showModal(modalId) {
-            document.getElementById(modalId).style.display = 'block';
-            document.getElementById('modalBackground').style.display = 'block';
-        }
-
-        function hideModal(modalId) {
-            document.getElementById(modalId).style.display = 'none';
-            document.getElementById('modalBackground').style.display = 'none';
-        }
-    </script>
-</body>
+  </body>
 </html>

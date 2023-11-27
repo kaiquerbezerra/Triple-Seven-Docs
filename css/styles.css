@@ -1,53 +1,62 @@
+/*Configuração da fonte*/
 @font-face {
   font-family: 'Roboto';
   src: url('caminho/para/Roboto-Regular.woff2') format('woff2'),
-      url('caminho/para/Roboto-Regular.woff') format('woff');
+    url('caminho/para/Roboto-Regular.woff') format('woff');
   font-weight: 400;
   font-style: normal;
 }
 
+/* Ajuste para dispositivos móveis */
 @media only screen and (max-width: 800px) {
   .content-wrapper {
-      margin: 20px; /* Reduza a margem para dispositivos móveis */
+    margin: 20px;
   }
 }
 
+/*Ajuste do tamanho da logo*/
 img.logo {
-  width: 50px; /* Defina a largura máxima desejada */
-  height: 50px; /* A altura será ajustada automaticamente */
+  width: 50px; /*Define a altura e largura máxima desejada */
+  height: 50px;
 }
 
+/*Ajuste do corpo para a nova fonte*/
 body {
-    font-family: 'Roboto', sans-serif; /* Aplicando a nova fonte */
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: background-color 0.5s; 
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: background-color 0.5s; 
 }
 
+/*Coloração do header e alinhamento central*/
 header {
-    text-align: center;
-    padding: 15px;
-    background-color: #80004B;
+  text-align: center;
+  padding: 15px;
+  background-color: #80004B;
 }
 
+/*Remoção da margem para manter estável a estrutura*/
 header h1 {
-    margin: 0;
+  margin: 0;
 }
 
+/*Estilização da ancora header1 (icone)*/
 header h1 a {
-    text-decoration: none;
-    color: #fff;
-    transition: color 0.3s;
-    display: inline-block;
-    transition: transform 0.3s ease-in-out;
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s;
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
 }
 
+/*Efeitos da mesma ancora quando o mouse é passado*/
 header h1 a:hover {
-    transform: scale(1.3); 
-    text-decoration: underline;
+  transform: scale(1.3); 
+  text-decoration: underline;
 }
 
+/*Estilização base da barra de navegação*/
 nav {
   text-align: center;
   background-color: #008000;
@@ -56,15 +65,18 @@ nav {
   bottom: 0; /* Vai até o final da página */
 }
 
+/*Efeito de salto e mudança de cor quando o mouse passa nessas ancoras*/
 nav a:hover {
-    color: #a11b43;
-    transform: scale(1.3); 
+  color: #a11b43;
+  transform: scale(1.3); 
 }
 
+/*Padding base do corpo*/
 main {
-    padding: 5px;
+  padding: 5px;
 }
 
+/*Estilização base pro rodapé, com cor diferente, largura total e texto alinhado ao centro*/
 footer {
   position: fixed;
   bottom: 0;
@@ -77,87 +89,84 @@ footer {
   transition: background-color 0.5s, color 0.5s;
 }
 
-body.dark-mode footer {
-    background-color: #333; /* Cor de fundo no modo escuro */
-    color: white; /* Cor do texto no modo escuro */
-}
-
+/*Estilização do container central de algumas páginas*/
 .container {
-  max-width: 1200px; /* Defina a largura máxima desejada */
-  border-left: 2px solid #949697; /* Cor da borda do retângulo */
-  border-right: 2px solid #949697; /* Cor da borda do retângulo */
-  padding: 5px; /* Espaçamento interno para dar algum espaço entre o conteúdo e a borda */
+  max-width: 1200px; /*Largura máxima desse bloco*/
+  border-left: 2px solid #949697; /*Cor das bordas laterias do container central*/
+  border-right: 2px solid #949697; 
+  padding: 5px;
   margin: 15px auto;
 }
 
+/*Estilização simples do container de sobre*/
 .container-about {
-  max-width: 1200px; /* Defina a largura máxima desejada */
-  padding: 5px; /* Espaçamento interno para dar algum espaço entre o conteúdo e a borda */
+  max-width: 1200px;
   margin: 15px auto;
 }
 
+/*Estilização do Título de introdução do projeto*/
 .introduction {
   padding: 5px;
   margin-bottom: 10px;
   text-align: center;
-  max-width: 800px; /* Define a largura máxima para melhor legibilidade */
-  margin: 0 auto; /* Centraliza o bloco */
+  max-width: 800px; 
+  margin: 0 auto; /*Centraliza o bloco*/
 }
 
+/*Estilização do texto de introdução do projeto*/
 .project-description {
   text-align: justify;
-  max-width: 800px; /* Define a largura máxima para melhor legibilidade */
-  margin: 0 auto; /* Centraliza o bloco */
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-  .features {
-      margin-bottom: 20px;
-  }
-
-  .technologies-used {
-      margin-bottom: 20px;
-  }
-
-  .separator {
-    border: 1px solid #023465; /* Cor azul escura (pode ajustar a cor conforme necessário) */
-    margin: 20px 0; /* Espaçamento acima e abaixo da linha */
+/*Estilização do título de funcionalidades do projeto*/
+.features {
+  margin-bottom: 20px;
 }
 
-  .vertical-line-right {
-    border: 1px solid #828486;
-    height: 500px;
-  }
+/*Estilização das funcionalidades usadas no projeto*/
+.technologies-used {
+  margin-bottom: 20px;
+}
 
-  .vertical-line-left {
-    border: 2px solid #828486;
-  }
+/*Estilização do separador de textos*/
+.separator {
+  border: 1px solid #023465;
+  margin: 20px 0;
+}
 
+/*Estilização do botão de troca de modo*/
 .mode-switch {
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    font-size: 24px;
-    transition: transform 0.5s;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 24px;
+  transition: transform 0.5s;
 }
 
+/*Estilização do botão de troca de modo quando o mouse é passado*/
 .mode-switch:hover {
-      transform: scale(1.2); /* Aumenta ligeiramente o tamanho ao passar o mouse */
-  }
+  transform: scale(1.2); /* Aumenta ligeiramente o tamanho ao passar o mouse */
+}
 
+/*Estilização dos ícones de redes sociais no canto inferior direito*/
 .social-icons {
-    position: absolute;
-    right: 30px;
-    bottom: 10px;
+  position: absolute;
+  right: 30px;
+  bottom: 10px;
 }
 
+/*Estilização ícones como âncoras*/
 .social-icons a {
-      color: #333; /* Cor dos ícones no modo claro */
-      margin-left: 10px;
-      font-size: 24px;
-      transition: color 0.5s; /* Adicionando transição para a cor dos ícones */
+  color: #333;
+  margin-left: 10px;
+  font-size: 24px;
+  transition: color 0.5s;
 }
 
+/*Estilização da barra de navegação lateral*/
 .vertical-nav {
   background-color: #4CAF50;
   padding: 15px;
@@ -165,11 +174,12 @@ body.dark-mode footer {
   text-align: center;
   position: fixed;
   height: 100%;
-  top: 9px; /* Ajuste a posição para o topo */
-  bottom: 0; /* Ajuste a posição para o fundo */
+  top: 9px; 
+  bottom: 0;
   z-index: 1;
 }
 
+/*Estilização das ancoras dentro da barra de navegação*/
 .vertical-nav a {
   display: block;
   color: white;
@@ -179,25 +189,23 @@ body.dark-mode footer {
   transition: margin 0.3s;
 }
 
-
-body.dark-mode .social-icons a {
-    color: white; /* Cor dos ícones no modo escuro */
+/*Divisor dentro da barra de navegação lateral*/
+.nav-divider {
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
 }
 
-body.dark-mode {
-    background-color: #333;
-    color: white;
-}
-
+/*Estilização do mapa da google*/
 #googleMap {
   width: 300px;
   height: 200px;
   position: absolute;
   bottom: 70px;
-  left: calc(100% - 310px);
+  left: calc(100% - 310px); /*Cálculo para deixa-lo na extrema direita*/
   z-index: 1;
 }
 
+/*Estilização do bloco do carrossel de imagem*/
 .slideshow-container {
   max-width: 200px; /* Defina a largura máxima do slideshow */
   max-height: 200px;
@@ -205,15 +213,18 @@ body.dark-mode {
   bottom: 150px;
 }
 
+/*Estilização da animação de fade do slideshow*/
 .fade {
   animation: fade 2s infinite;
 }
 
+/*Animação de fade*/
 @keyframes fade {
   from { opacity: .4; }
   to { opacity: 1; }
 }
 
+/*Estilização do bloco que conterá a cascata de rotas*/
 .dropdown {
   position: relative;
   top: 0px;
@@ -221,6 +232,7 @@ body.dark-mode {
   margin: 0 10px; /* Ajuste conforme necessário para alinhar com os outros itens do menu */
 }
 
+/*Conteúdo de dentro de rota*/
 .dropdown-content {
   display: none;
   position: absolute;
@@ -233,39 +245,44 @@ body.dark-mode {
   padding: 10px 0; /* Adiciona algum espaço interno ao submenu */
 }
 
+/*Revelação do bloco de rotas quando o mouse é passado dentro do dropdown*/
 .dropdown:hover .dropdown-content {
   display: block;
 }
 
+/*Estilização dos itens dentro da cascata*/
 .dropdown-item {
   padding: 12px 16px;
   position: absolute;
   top: -20px;
   display: block;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s; /* Adiciona uma transição de cor de fundo e escala */
+  transition: background-color 0.3s, transform 0.3s;
 }
 
+/*Estilização do item que gera a cascata*/
 .dropdown-item-master {
   padding: 12px 16px;
   position: absolute;
   top: -20px;
   display: block;
   cursor: pointer;
-  transition: background-color 0.3s, transform 0.3s; /* Adiciona uma transição de cor de fundo e escala */
+  transition: background-color 0.3s, transform 0.3s;
 }
 
+/*Estilização do item que gera a cascata quando o mouse é passado*/
 .dropdown-item-master:hover {
   color: #a11b43;
   transform: scale(1.3);
 }
 
+/*Estilização dos itens da cascata quando o mouse é passado*/
 .dropdown-item:hover {
   background-color: #ddd;
-  transform: translateY(-5px); /* Diminui o salto ao passar o mouse */
+  transform: translateY(-5px);
 }
 
-
+/*Estilização dos popup que aparece uma vez*/
 .popup {
   display: none;
   position: fixed;
@@ -278,10 +295,12 @@ body.dark-mode {
   z-index: 1000;
 }
 
+/*Centralização dos itens do popup*/
 .popup-content {
   text-align: center;
 }
 
+/*Estilização do botão de fechar do popup*/
 .close {
   position: absolute;
   top: 10px;
@@ -290,15 +309,18 @@ body.dark-mode {
   font-size: 20px;
 }
 
+/*Estilização base do formulário*/
 form {
   margin-top: 20px;
 }
 
+/*Estilização das labels do formulário*/
 label {
   display: block;
   margin-bottom: 5px;
 }
 
+/*Estilização das entradasdo formulário*/
 input {
   width: 100%;
   padding: 8px;
@@ -306,6 +328,7 @@ input {
   box-sizing: border-box;
 }
 
+/*Estilização do botão do formulário*/
 button {
   background-color: #008000;
   color: #fff;
@@ -314,67 +337,14 @@ button {
   cursor: pointer;
 }
 
-
-.popup {
-  display: none;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 20px;
-  background: #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  z-index: 1000;
-}
-
-.popup-content {
-  text-align: center;
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  cursor: pointer;
-  font-size: 20px;
-}
-
-form {
-  margin-top: 20px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-}
-
-button {
-  background-color: #008000;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
-}
-
-.nav-divider {
-  border-top: 1px solid #ccc; /* Cor e espessura da linha */
-  margin: 10px 0; /* Espaçamento acima e abaixo do traço */
-}
-
+/*Estilização dos das rotas do projeto*/
 h4 {
   color: white; 
   margin-top: 5px; 
   margin-bottom: 5px;
 }
 
-
+/*Estilização do bloco de rota*/
 .route-block {
   border: 2px solid #ddd;
   padding: 10px;
@@ -386,10 +356,12 @@ h4 {
   text-align: left;
 }
 
+/*Estilização do bloco de rota quando o mouse é passado*/
 .route-block:hover {
-  background-color: #f5f5f5;
+  background-color: #cecbcb;
 }
 
+/*Estilização da tag de método get*/
 .get-method {
   background-color: #3498db;
   color: #fff;
@@ -398,6 +370,7 @@ h4 {
   margin-bottom: 5px;
 }
 
+/*Estilização da tag de método post*/
 .post-method {
   background-color: #19ff04;
   color: #fff;
@@ -406,6 +379,7 @@ h4 {
   margin-bottom: 5px;
 }
 
+/*Estilização da tag de método delete*/
 .delete-method {
   background-color: #ff0000;
   color: #fff;
@@ -414,6 +388,7 @@ h4 {
   margin-bottom: 5px;
 }
 
+/*Estilização da tag de método put*/
 .put-method {
   background-color: #ff7300;
   color: #fff;
@@ -422,6 +397,7 @@ h4 {
   margin-bottom: 5px;
 }
 
+/*Estilização da tag de autenticado ou não*/
 .authenticated {
   color: #27ae60;
   font-weight: bold;
@@ -454,17 +430,19 @@ h4 {
   z-index: 0;
 }
 
+
+/*Daqui para baixo são só os modos noturnos de cada uma das partes do corpo do projeto*/
 body.dark-mode .modal {
-background-color: #333;
-color: #fff;
+  background-color: #333;
+  color: #fff;
 }
 
 body.dark-mode .modal-background {
-background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 body.dark-mode .route-block {
-border-color: #555;
+  border-color: #555;
 }
 
 body.dark-mode .route-block:hover {
@@ -495,4 +473,18 @@ body.dark-mode .put-method {
 body.dark-mode .authenticated {
   color: #27ae60;
   font-weight: bold;
+}
+
+body.dark-mode footer {
+  background-color: #333; /* Cor de fundo no modo escuro */
+  color: white; /* Cor do texto no modo escuro */
+}
+
+body.dark-mode .social-icons a {
+  color: white; /* Cor dos ícones no modo escuro */
+}
+
+body.dark-mode {
+  background-color: #333;
+  color: white;
 }
